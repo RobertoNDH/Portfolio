@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+    </style>
 </head>
 <body>
     <header>
@@ -21,7 +24,11 @@
         </section>
 
         <section>
-            <img src="img/foto-cara-mobile.png" alt="Foto Cara">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="img/foto-cara-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/foto-cara-tablet.png">
+                <img src="img/foto-cara-mobile.png" alt="Foto Cara">
+            </picture>
             <h1>Nice to meet you! I'm Adam Keyes.</h1>
             <p>Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.</p>
             <a href="#">CONTACT ME</a>
@@ -64,7 +71,10 @@
 
             <div>
                 <div>
-                    <img src="img/imagen-design-mobile-tablet.png" alt="Imagen Design">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/imagen-design-desktop.png">
+                        <img src="img/imagen-design-mobile-tablet.png" alt="Imagen Design">
+                    </picture>
                     <h4>DESIGN PORTFOLIO</h4>
                     <div>
                         <p>HTML</p>
@@ -77,7 +87,10 @@
                     </div>
                 </div>
                 <div>
-                    <img src="img/foto-elerarning-mobile-tablet.png" alt="Imagen E-lerarning">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/imagen-elearning-desktop.png">
+                        <img src="img/foto-elerarning-mobile-tablet.png" alt="Imagen E-lerarning">
+                    </picture>
                     <h4>E-LEARNING LANDING PAGE</h4>
                     <div>
                         <p>HTML</p>
@@ -90,7 +103,10 @@
                     </div>
                 </div>
                 <div>
-                    <img src="img/imagen-todo-mobile-tablet.png" alt="imagen Todo">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/imagen-todo-desktop.png">
+                        <img src="img/imagen-todo-mobile-tablet.png" alt="imagen Todo">
+                    </picture>
                     <h4>TODO WEB APP</h4>
                     <div>
                         <p>HTML</p>
@@ -103,7 +119,10 @@
                     </div>
                 </div>
                 <div>
-                    <img src="img/imagen-enterta-mobile-tablet.png" alt="Imagen Entertainment">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/imagen-enterta-desktop.png">
+                        <img src="img/imagen-enterta-mobile-tablet.png" alt="Imagen Entertainment">
+                    </picture>
                     <h4>ENTERTAINMENT WEB APP</h4>
                     <div>
                         <p>HTML</p>
@@ -116,7 +135,10 @@
                     </div>
                 </div>
                 <div>
-                    <img src="img/foto-memory-mobile-tablet.png" alt="Imagen Memory Game">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/imagen-memory-desktop.png">
+                        <img src="img/foto-memory-mobile-tablet.png" alt="Imagen Memory Game">
+                    </picture>
                     <h4>MEMORY GAME</h4>
                     <div>
                         <p>HTML</p>
@@ -129,7 +151,10 @@
                     </div>
                 </div>
                 <div>
-                    <img src="img/foto-art-mobile-tablet.png" alt="Imagen Art Gallery">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/imagen-art-desktop.png">
+                        <img src="img/foto-art-mobile-tablet.png" alt="Imagen Art Gallery">
+                    </picture>
                     <h4>ART GALLERY SHOWCASE</h4>
                     <div>
                         <p>HTML</p>
