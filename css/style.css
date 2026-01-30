@@ -59,6 +59,10 @@ header, main {
     font-size: 2.5rem;
     color: var(--white);
     margin-bottom: 1.2rem;
+
+    span {
+      border-bottom: 4px solid var(--green);
+    }
   }
 
   p {
@@ -70,6 +74,11 @@ header, main {
     text-decoration: none;
     color: var(--white);
     font-size: 1.2rem;
+    border-bottom: 2px solid var(--green);
+  }
+
+  a:hover {
+    color: var(--green);
   }
 }
 
@@ -115,6 +124,11 @@ hr {
     a {
       text-decoration: none;
       color: var(--white);
+      border-bottom: 2px solid var(--green);
+    }
+
+    a:hover {
+      color: var(--green);
     }
   }
   
@@ -139,6 +153,11 @@ hr {
         text-decoration: none;
         color: var(--white);
         font-size: 1.3rem;
+        border-bottom: 2px solid var(--green);
+      }
+
+      a:hover {
+        color: var(--green);
       }
     }
   }
@@ -177,6 +196,15 @@ hr {
       border-bottom: 1px solid var(--grey);
       padding: 1.8rem;
     }
+
+    input:focus {
+      outline: none;
+      border-color: var(--green);
+    }
+
+    input:invalid {
+      border-color: red;
+    }
     
     #message {
       height: 8rem;
@@ -185,14 +213,23 @@ hr {
   }
 
   .btn {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.2rem;
     display: flex;
     justify-content: end;
-    margin-top: -2.5rem;
-    margin-bottom: 6rem;
+    
+    a {
+      text-decoration: none;
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-top: -3rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--green);
+    }
+
+    a:hover {
+      color: var(--green);
+    }
   }
+
 
   .bottom {
     padding: 2.5rem;
