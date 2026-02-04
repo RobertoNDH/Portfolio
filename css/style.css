@@ -132,7 +132,7 @@ hr {
     }
   }
   
-  .proyects {
+  .projects {
     img {
       width: 100%;
     }
@@ -233,5 +233,123 @@ hr {
 
   .bottom {
     padding: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    a {
+      font-size: 1.8rem;
+    }
+  }
+
+  .portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: text image;
+    
+    picture {
+      display: flex;
+      justify-content: end;
+      margin-right: -1rem;
+      grid-area: image;
+    }
+
+    div {
+      grid-area: text;
+      width: 55%;
+      align-content: center;
+
+      h1 {
+        font-size: 4rem;
+        text-align: left;
+        line-height: 4.5rem;
+        margin-bottom: 4rem;
+      }
+
+      p {
+        text-align: left;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        display: flex;
+        justify-content: start;
+        font-size: 1.5rem;
+        width: 38%;
+      }
+
+    }
+  }
+
+  main {
+    hr {
+      margin-top: -0.2rem;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 3rem;
+      text-align: left;
+      margin-bottom: 5rem;
+
+      h2 {
+        font-size: 2.8rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .hero {
+    hr {
+      display: none;
+    }
+
+    .title {
+      h2 {
+        font-size: 3.5rem;
+      }
+
+      a {
+        font-size: 1.2rem;
+      }
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  .footer {
+    .margin {
+      margin-left: 10rem;
+      margin-right: 10rem;
+
+      h3 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .bottom {
+      padding: 0;
+      margin-top: 0.5rem;
+    }
   }
 }
